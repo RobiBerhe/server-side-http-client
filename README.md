@@ -5,7 +5,7 @@ you can use it in NodeJs applications.
 
 # @robelberhe/requester
 
-![npm (scoped)](https://img.shields.io/npm/v/v1.svg?label=http-requester&logo=requester)
+![npm (scoped)](https://img.shields.io/badge/http--requester-1.1.3-blue.svg)
 
 (https://github.com/RobiBerhe/server-side-http-client)
 
