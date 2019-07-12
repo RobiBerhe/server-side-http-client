@@ -10,6 +10,39 @@ you can use it in NodeJs applications.
 (https://github.com/RobiBerhe/server-side-http-client)
 
 ## installation
-``` js
+```
 npm install @robelberhe/requster
+```
+
+## Examples (http get requests)
+here is an example which show how to send an http get request using **requester**
+
+``` js
+const requester = require('@robelberhe/requester');
+
+requester.get("http://yoursite.com/api/endpoint")
+          .then((res)=>{
+              console.log("Data Retrieved...");
+              console.log(res.body);
+          }).catch((error)=>{
+              console.log("There seems to be some problem accessing the resource");
+              console.log(error.message);
+              // you can also get whatever the server may have sent instead by accessing error.data.
+              // console.log(error.data);
+          });
+```
+## Examples (http post requests)
+``` js
+requester.post("http://yoursite.com/endpoint",{userID:1})
+.then((res)=>{
+   console.log(`status code: ${res.statusCode}`);
+   console.log("Data : ");
+   console.log(res.body);
+}).catch((error)=>{
+    console.log(error);
+    // or error.data.
+});
+
+
+
 

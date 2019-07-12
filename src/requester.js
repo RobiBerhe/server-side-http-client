@@ -22,13 +22,13 @@ function request(requestOptions, data){
                         reject(error);
                     }
                 } catch (error) {
-                    res.body = body;
-                    console.log(error);
-                    reject(error,res);
+                    error.data = body;
+                    reject(error);
                 }
             });
         });
         request.on('error',(error)=>{
+            error.data = "";
             reject(error);
         });
         request.write(data);
