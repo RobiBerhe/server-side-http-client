@@ -33,6 +33,7 @@ requester.get("http://yoursite.com/api/endpoint")
 ```
 ## Examples (http post requests)
 ``` js
+const requester = require('@robelberhe/requester');
 requester.post("http://yoursite.com/endpoint",{userID:1})
 .then((res)=>{
    console.log(`status code: ${res.statusCode}`);
