@@ -1,6 +1,6 @@
 {
   "name": "@robelberhe/requester",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "a very lightweight promise based http client, built to access json based api's and easy to use and dependency free.",
   "main": "requester.js",
   "scripts": {
