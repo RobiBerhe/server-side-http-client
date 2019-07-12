@@ -1,0 +1,20 @@
+{
+  "name": "@robelberhe/requester",
+  "version": "1.0.0",
+  "description": "a very lightweight promise based http client, built to access json based api's and easy to use and dependency free.",
+  "main": "requester.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "[\"http",
+    "client\"",
+    "\"request\"",
+    "\"http",
+    "requester\"",
+    "\"request",
+    "api\"]"
+  ],
+  "author": "Robel Berhe",
+  "license": "ISC"
+}
